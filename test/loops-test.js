@@ -43,7 +43,7 @@ describe('loops', () => {
   })
 
   describe('whileLoop(n)', () => {
-    xit('counts down from n to 0', () => {
+    it('counts down from n to 0', () => {
       const spy = chai.spy.on(console, 'log')
       const n = Math.floor(Math.random() * 100)
 
@@ -55,7 +55,7 @@ describe('loops', () => {
   })
 
   describe('doWhileLoop(array)', () => {
-    xit('removes elements from `array` until `array` is empty or until `maybeTrue()` returns `false`', () => {
+    it('removes elements from `array` until `array` is empty or until `maybeTrue()` returns `false`', () => {
       const [array, t] = makeArray()
       const l = array.length
 
